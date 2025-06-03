@@ -35,7 +35,9 @@ yarn add smart-select-diba
 
 <script setup>
 import { ref } from 'vue'
-import { SmartSelectVue3 } from 'smart-select-diba'
+import SmartSelectVue3 from 'smart-select-diba/vue3'
+or
+mport SmartSelect from 'smart-select-diba/src/vue3/SmartSelect.vue'
 import 'smart-select-diba/dist/smart-select-diba.css'
 
 const options = ref([
@@ -66,7 +68,10 @@ Usage Vue 2
 </template>
 
 <script>
-import { SmartSelectVue2 } from 'smart-select-diba'
+import SmartSelectVue2 from 'smart-select-diba/vue2'
+or
+import SmartSelect from 'smart-select-diba/src/vue2/SmartSelect.vue'
+
 import 'smart-select-diba/dist/smart-select-diba.css'
 
 export default {

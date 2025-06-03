@@ -1,23 +1,35 @@
 {
   "name": "smart-select-diba",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "کامپوننت Smart Select برای Vue 2، Vue 3 و Nuxt",
   "main": "dist/smart-select-diba.cjs.js",
   "module": "dist/smart-select-diba.es.js",
   "unpkg": "dist/smart-select-diba.umd.js",
- 
+  "style": "dist/smart-select-diba.css",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE",
+    "src"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/smart-select-diba.es.js",
+      "require": "./dist/smart-select-diba.cjs.js",
+      "style": "./dist/smart-select-diba.css"
+    },
+    "./vue2": "./vue2.js",
+    "./vue3": "./vue3.js"
+  },
   "scripts": {
     "build": "vite build"
   },
-  "keywords": ["vue", "vue2", "vue3", "nuxt", "select", "component", "diba"],
+  "keywords": ["vue", "vue2", "vue3", "nuxt", "select", "component", "dropdown", "diba"],
   "author": "meysam diba <meysam.diba94@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meysam991402/smart-select-diba.git"
+    "url": "git+https://github.com/meysam991402/smart-select-diba.git"
   },
   "peerDependencies": {
     "vue": "^2.6.0 || ^3.0.0"
